@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tharun Teja | Web Developer</title>
+<meta name="description" content="Portfolio of Errampalli Tharun Teja, web developer and final-year B.Tech student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f6; --surface:#ffffff; --ink:#101820; --muted:#4b5a6a;
+  --accent:#0f766e; --accent-ink:#ffffff; --warm:#f2a900; --line:#d5dde6;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0e141b; --surface:#16202b; --ink:#eaf0f6; --muted:#9db0c2; --accent:#2dd4bf; --accent-ink:#06201d; --line:#27364a;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.05rem;line-height:1.6}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:12px;flex-wrap:wrap}
+nav strong{font-family:"Bricolage Grotesque",sans-serif}
+nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-weight:600;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{padding:64px 0 48px}
+.hero h1{font-size:clamp(2.4rem,9vw,4.6rem);font-weight:800;letter-spacing:-.02em;max-width:14ch}
+.hero p{max-width:56ch;color:var(--muted);font-size:1.15rem;margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.6rem,5vw,2.2rem);margin-bottom:20px}
+.about{display:grid;gap:24px}
+.facts{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.facts b{display:block;font-size:.9rem;color:var(--muted);font-weight:600}
+.bars{display:grid;gap:16px}
+.bar-top{display:flex;justify-content:space-between;font-weight:600;margin-bottom:6px}
+.track{height:12px;background:var(--line);border-radius:6px;overflow:hidden}
+.fill{height:100%;background:var(--accent);border-radius:6px;width:var(--w)}
+.cards{display:grid;gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{margin:0;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tags span{font-size:.85rem;padding:3px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line)}
+.links{display:flex;gap:12px;flex-wrap:wrap}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (min-width:720px){
+  .about{grid-template-columns:1.3fr 1fr}
+  .cards{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <strong>Tharun Teja</strong>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>I build clean, responsive websites.</h1>
+    <p>Hi, I'm Tharun, a final-year B.Tech student learning front-end web development. I like turning ideas into fast, simple pages that work well on any screen.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <div class="about">
+      <p>I'm from Gudur, Andhra Pradesh, and I'm completing my B.Tech in AI &amp; Data Science at Dhanalakshmi Srinivasan University, Trichy. I enjoy learning by building, from small web pages to team projects like Trust Path. My goal is to grow as a web developer and, one day, build something of my own.</p>
+      <ul class="facts">
+        <li><b>Education</b>B.Tech AI &amp; Data Science, 2023 to 2027</li>
+        <li><b>Looking for</b>Web developer roles and internships</li>
+        <li><b>Based in</b>Tamil Nadu, India</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="bars">
+      <div><div class="bar-top"><span>HTML</span><span>75%</span></div><div class="track"><div class="fill" style="--w:75%"></div></div></div>
+      <div><div class="bar-top"><span>CSS</span><span>70%</span></div><div class="track"><div class="fill" style="--w:70%"></div></div></div>
+      <div><div class="bar-top"><span>JavaScript</span><span>55%</span></div><div class="track"><div class="fill" style="--w:55%"></div></div></div>
+      <div><div class="bar-top"><span>Responsive design</span><span>65%</span></div><div class="track"><div class="fill" style="--w:65%"></div></div></div>
+      <div><div class="bar-top"><span>Git &amp; GitHub</span><span>50%</span></div><div class="track"><div class="fill" style="--w:50%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Trust Path</h3>
+        <p>An AI-powered career guidance system, built as a team project, that helps students choose a career path based on their interests and skills.</p>
+        <div class="tags"><span>Team project</span><span>AI</span></div>
+      </article>
+      <article class="card">
+        <h3>This portfolio</h3>
+        <p>A responsive landing page with light and dark themes, built with plain HTML and CSS.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's connect</h2>
+    <p>Open to web development roles and internships. The fastest way to reach me is email: <a href="mailto:tharunteja120@gmail.com">tharunteja120@gmail.com</a></p>
+    <div class="links">
+      <a class="btn primary" href="https://mail.google.com/mail/?view=cm&to=tharunteja120@gmail.com" target="_blank" rel="noopener">Email me</a>
+      <a class="btn ghost" href="https://github.com/tharunteja20" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/tharun-teja-errampalli-3b08b9342" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Errampalli Tharun Teja</div>
+</footer>
+</body>
+</html>
